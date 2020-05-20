@@ -22,6 +22,4 @@ public class Lecturer {
 	public String getName() {
         return name;
     }
-
-
 }

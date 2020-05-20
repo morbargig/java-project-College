@@ -1,2 +1,3 @@
 #!/bin/bash
-git add . &&  git commit -m 'autocommit'  && git push origin master
+if [ $? -eq 0 ] ; then commit='autocommit'; else commit=$1;  fi
+git add . && git commit -m "$commit" && git push origin master
